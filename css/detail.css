@@ -1,0 +1,120 @@
+.legends { /* the dot is for class*/
+	font-weight: bold;
+	font-size: 30px;
+	font-style: italic;
+	background-color: rgba(255,255,255,1);
+	border-style: solid;
+	margin: auto;
+	width: 50%;
+	border: 2px solid black;
+	padding: 4px;
+	text-align: center;
+}
+
+body {
+ /* background-image: url("https://thumbs.dreamstime.com/b/pop-art-pizza-cartoon-pop-art-pizza-cartoon-colorful-colors-vector-illustration-graphic-design-116978331.jpg"); */
+ background-size: 250px 250px
+}
+
+form {
+	font-size: 15px;
+}	
+
+.orders{
+    float: left ;
+    width: 500px;
+	height: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+fieldset {
+	background-color: rgba(255,255,255,0.95);
+	width: 1000px;
+	margin: auto;
+}
+
+
+/* .butt {
+	width:70 ;
+	height: 30 ;
+} */
+
+.cusdet {
+	font-size: 17px
+}
+
+.wrapper{
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    padding:10px;
+	line-height: 1.7;
+}
+
+#success{
+	background:#03a679;
+	color:#f0f0f0;  
+  }
+  
+#failure{
+	background:#ff3939;
+	color:#f0f0f0;  
+}
+  
+.notify{  
+	position:absolute;
+	top:0px;
+	width:100%;
+	height:0;  
+	box-sizing:border-box;
+	color:white;  
+	text-align:center;
+	background:rgba(0,0,0,.6);
+	overflow:hidden;
+	box-sizing:border-box;
+	transition:height .2s;
+}
+  
+#notifyType:before{
+	display:block;
+	margin-top:15px; 
+}
+  
+.active{  
+	height:50px;
+}
+  
+.success:before{
+	Content:"Your order has been processed. Food will be delivered shortly";
+}
+  
+.failure:before{
+	Content:"Oh no! Something didn't go as planned :(";
+}
+
+.button-34 {
+	background: #5E5DF0;
+	border-radius: 999px;
+	box-shadow: #5E5DF0 0 10px 20px -10px;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	opacity: 1;
+	outline: 0 solid transparent;
+	padding: 8px 18px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: fit-content;
+	word-break: break-word;
+	border: 0;
+	justify-content: center;
+	align-items: center;
+}
+
+	

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>HTMLACTIVITY</title>
+	<link rel="stylesheet" type="text/css" href="css/detail.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.11.0/sweetalert2.css" />
+</head>
+
+<body>
+
+	<div class="notify"><span id="notifyType" class=""></span></div>
+
+	<form id = 'form body' method="POST" action="http://httpbin.org/anything"> <br>
+
+		
+
+		<div class="wrapper" > <!--Middle form two columns | Pizza Specs div--> 
+			
+			<fieldset class="orders" id = 'thepizza'> <!--All inputs-->
+                <div> <!--Main Toppings-->
+                    <label for = "mtop"> Dress For: </label>
+                    <select name="mainToppings" id = "toppingsoption" required>
+                        <option disabled selected id = 'emptyoption'> -- select an option -- </option>
+                        <option id='pepperoniOverload' class = "mtopchoice">Male - &#8369 100</option>
+                        <option id='hawaiian' class = "mtopchoice">Female- &#8369 50</option>
+                        <option id='meatOverload' class = "mtopchoice">Shoes - &#8369 125</option>
+                    </select>
+                </div> 
+				
+				<legend  class = "legends"> Dress </legend>
+				Dress Size:
+				<div> <!--Size-->
+					<input type = "radio" name = "sizeradio" id = "small" required> <label for = "small" id='labelSmall'> Small -  </label>
+					<input type = "radio" name = "sizeradio" id = "medium"> <label for = "medium" id='labelMedium'> Medium -  </label>
+					<input type = "radio" name = "sizeradio" id = "large"> <label for = "large"> Large -  </label>
+				</div>
+			Dress Type
+				<div> <!--Crust-->
+					<input type = "radio" name = "crustradio" id = "thin" required> <label for = "thin" id='labelThin'> Formal - &#8369 125 </label>
+					<input type = "radio" name = "crustradio" id = "thick"> <label for = "thick" id='labelThick'> Casual - &#8369 250 </label>
+                    <input type = "radio" name = "crustradio" id = "thick"> <label for = "thic" id='labelThi'> T-shirts - &#8369 250 </label>
+
+                </div>
+			<!--Additional Toppings-->
+            Tracks:
+				<div>
+					<input type = "checkbox" class='addtopcheck' name = "Additional Toppings" id = "vegetables"> <label for = "vegetables"> Half - &#8369 12</label>
+					<input type = "checkbox" class='addtopcheck' name = "Additional Toppings" id = "meat"> <label for = "meat"> Full - &#8369 75</label>
+					<input type = "checkbox" class='addtopcheck' name = "Additional Toppings" id = "cheese"> <label for = "cheese"> Medium - &#8369 50</label>
+				</div>
+			</fieldset>
+
+			<fieldset class="orders"> <!--Receipt-->
+				<legend  class = "legends"> Your Order </legend>
+				<div id="receipt">
+					<p id="sizeOrder"></p>
+					<p id="crustOrder"></p>
+					<p id="mainOrder"></p>
+					<p id="additionalOrder"></p>
+					<p id="total"></p>
+				</div>
+			</fieldset>
+
+		</div> <br>
+		<!--delivery details-->
+		<!-- <fieldset> 	
+			<legend class = "legends"> Delivery Details</legend><br>
+
+			<input type="time" class= "deldet" id="deltime" name="Delivery Time" placeholder="Enter time" min="10:00" max="19:00">
+ 
+			<br><br>
+
+			<label for = "addreq"> Additional Requests: </label> <br>
+			<textarea rows="7" cols="75" name="additionalRequest" id = "addRequest" required></textarea>
+
+			<br><br>
+
+		</fieldset><br> -->
+
+		<button type = "reset" class = "button-34" class="center"> Reset </button>
+		<button type = "submit" class = "button-34" class="center" id="submit"><a href="shipping.html">Submit Order</a>  </button>
+
+	</form>
+
+	<code id="code" class ='return'></code>
+	<script src = "detail.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.11.0/sweetalert2.all.min.js"></script>
+
+</body>
+</html>
